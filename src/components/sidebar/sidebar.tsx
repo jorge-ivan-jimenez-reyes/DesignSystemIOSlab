@@ -26,22 +26,22 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
         <h2 className="text-2xl font-bold text-blue-400">Menú</h2>
         <ul className="space-y-4">
           <li>
-            <a href="/components/button" className="text-gray-300 hover:text-white">
+            <a href="/paginas/button" className="text-gray-300 hover:text-white">
               Botones
             </a>
           </li>
           <li>
-            <a href="/components/card" className="text-gray-300 hover:text-white">
+            <a href="/paginas/card" className="text-gray-300 hover:text-white">
               Tarjetas
             </a>
           </li>
           <li>
-            <a href="/tokens/colors" className="text-gray-300 hover:text-white">
+            <a href="/paginas/colors" className="text-gray-300 hover:text-white">
               Colores
             </a>
           </li>
           <li>
-            <a href="/tokens/typography" className="text-gray-300 hover:text-white">
+            <a href="/paginas/typography" className="text-gray-300 hover:text-white">
               Tipografía
             </a>
           </li>

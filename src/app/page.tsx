@@ -38,7 +38,7 @@ export default function Home() {
           {/* Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <a
-              href="/components/button"
+              href="/paginas/button"
               className="p-6 bg-[#1e293b] hover:bg-[#334155] rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
             >
               <h2 className="text-2xl font-semibold text-blue-400">Botones</h2>
@@ -47,7 +47,7 @@ export default function Home() {
               </p>
             </a>
             <a
-              href="/components/card"
+              href="/paginas/card"
               className="p-6 bg-[#1e293b] hover:bg-[#334155] rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
             >
               <h2 className="text-2xl font-semibold text-blue-400">Tarjetas</h2>
