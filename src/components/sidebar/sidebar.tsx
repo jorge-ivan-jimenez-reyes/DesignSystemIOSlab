@@ -1,6 +1,6 @@
 "use client";
 
-import { FiX } from "react-icons/fi"; // Ícono de cierre (react-icons)
+import { FiX } from "react-icons/fi"; // Ícono de cerrar (react-icons)
 
 interface SidebarProps {
   isOpen: boolean;
@@ -14,11 +14,11 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out shadow-lg z-50`}
     >
-      <div className="p-6 space-y-6">
-        {/* Close Icon */}
+      <div className="p-6 space-y-6 relative">
+        {/* Ícono de cierre */}
         <button
           onClick={toggleSidebar}
-          className="text-gray-300 hover:text-white absolute top-4 right-4"
+          className="absolute top-4 right-4 text-gray-300 hover:text-white"
         >
           <FiX size={24} />
         </button>

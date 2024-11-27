@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi"; // Ícono de menú (react-icons)
-import Sidebar from "@/components/sidebar/sidebar";
+import Sidebar from "@/components/sidebar/sidebar"; // Componente Sidebar
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Main content */}
       <div className="flex-1 p-10 relative">
-        {/* Menu Icon */}
+        {/* Botón para abrir el menú */}
         <button
           onClick={toggleSidebar}
           className="absolute top-4 left-4 bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300"

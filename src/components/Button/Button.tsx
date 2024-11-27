@@ -1,15 +1,15 @@
-type ButtonProps = {
-  children: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline";
-};
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
 
-export default function Button({ children, variant = "primary" }: ButtonProps) {
-  const baseStyles = "px-4 py-2 rounded font-bold";
-  const variants = {
-    primary: "bg-blue-500 text-white hover:bg-blue-600",
-    secondary: "bg-gray-500 text-white hover:bg-gray-600",
-    outline: "border border-gray-500 text-gray-500 hover:bg-gray-100",
-  };
-
-  return <button className={`${baseStyles} ${variants[variant]}`}>{children}</button>;
+export default function Button({ label, onClick }: ButtonProps) {
+  return (
+    <button
+      onClick={onClick}
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+    >
+      {label}
+    </button>
+  );
 }
